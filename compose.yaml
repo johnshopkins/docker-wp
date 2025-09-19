@@ -3,7 +3,7 @@ services:
     image: wordpress:latest
     container_name: wordpress
     volumes:
-      # maps local ./wp-content to docker container
+      - wordpress_data:/var/www/html
       - ./wp-content:/var/www/html/wp-content
     environment:
       - WORDPRESS_DB_NAME=wordpress
@@ -32,4 +32,5 @@ services:
       - 3306:3306
 
 volumes:
+  wordpress_data:
   db_data:
