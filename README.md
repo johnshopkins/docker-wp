@@ -8,6 +8,11 @@
     git clone git@github.com:johnshopkins/docker-wp-starter.git
     ```
 1. Add any themes, plugins, or uploaded files needed for the WordPress site to the _./wp-content/themes/_, _./wp-content/plugins/_, _./wp-content/uploads/_ folders in this repo.
+1. Create an _.env_ file based on _.env.example_:
+   ```bash
+   cp .env.example .env
+   ```
+1. Open _.env_ and update the database connection settings, as needed.
 1. Build the containers:
     ```bash
     docker compose up -d
