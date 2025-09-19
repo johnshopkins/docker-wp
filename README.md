@@ -1,11 +1,11 @@
-# Docker WordPress Starter
+# Docker WordPress
 
 ## Get it running
 
 1. Install [Docker Desktop](https://docs.docker.com/desktop/).
 1. Clone this repo:
     ```bash
-    git clone git@github.com:johnshopkins/docker-wp-starter.git
+    git clone git@github.com:johnshopkins/docker-wp.git
     ```
 1. Add any themes, plugins, or uploaded files needed for the WordPress site to the _./wp-content/themes/_, _./wp-content/plugins/_, _./wp-content/uploads/_ folders in this repo.
 1. Create an _.env_ file based on _.env.example_:
