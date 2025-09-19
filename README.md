@@ -22,3 +22,9 @@
 * Username: `admin`
 * Password: `password`
 * Database: `wordpress`
+
+## Helpful commands
+
+* `docker compose down`: Stops and removes the containers and default networks.
+* `docker compose down -v`: In addition to removing the containers, volumes are also removed.
+* `docker compose down -v --rmi`: In addition to removing the containers and volumes, images used by the services are also removed.
