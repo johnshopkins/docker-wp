@@ -11,7 +11,7 @@
 1. Replace _dump.sql_ with your site's SQL or keep it as-is (empty) for a fresh installation of WordPress. If you added SQL to _dump.sql_, uncomment line 24 in _compose.yaml_.
 1. Build the containers:
     ```bash
-    docker-compose up -d
+    docker compose up -d
     ```
     Note: The WordPress image will automatically install default plugins and themes.
 1. Your site is available here: [http://localhost:8080/](http://localhost:8080/). Changes made to files within _wp-content_ will update within the container automatically.
