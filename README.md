@@ -7,7 +7,7 @@
     ```bash
     git clone git@github.com:johnshopkins/docker-wp-starter.git
     ```
-1. Add any themes or plugins needed for the WordPress site to the _./wp-content/themes/_ and _./wp-content/plugins/_ folders in this repo.
+1. Add any themes, plugins, or uploaded files needed for the WordPress site to the _./wp-content/themes/_, _./wp-content/plugins/_, _./wp-content/uploads/_ folders in this repo.
 1. Build the containers:
     ```bash
     docker compose up -d
