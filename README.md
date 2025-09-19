@@ -21,13 +21,6 @@
 1. Optional: Import data into the database. See: [Connect to the database](#connect-to-the-database)
 1. Your site is now available here: [http://localhost:8080/](http://localhost:8080/)
 
-## Connect to the database
-
-* Host: `localhost`
-* Username: `admin`
-* Password: `password`
-* Database: `wordpress`
-
 ## Helpful commands
 
 * `docker compose down`: Stops and removes the containers and default networks.
