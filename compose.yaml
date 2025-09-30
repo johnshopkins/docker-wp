@@ -18,15 +18,15 @@ services:
       - 8080:80
 
   db:
-    image: mariadb:latest
+    image: mysql:8.0.42
     container_name: db
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      - MARIADB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - MARIADB_USER=${DB_USERNAME}
-      - MARIADB_PASSWORD=${DB_PASSWORD}
-      - MARIADB_DATABASE=${DB_NAME}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
     restart: always
     ports:
       - 3306:3306
